@@ -1,5 +1,5 @@
 <?php
-/* definições de host, database, usuário e senha
+// definições de host, database, usuário e senha
 $host = "localhost";
 $db   = "archII";
 $user = "archII";
@@ -40,6 +40,5 @@ $total = mysql_num_rows($dados);
 </html>
 <?php
 // tira o resultado da busca da memória
-mysql_free_result($dados);*/
-phpinfo();
+mysql_free_result($dados);
 ?>
