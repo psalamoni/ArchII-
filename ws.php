@@ -9,7 +9,7 @@ $con = mysql_pconnect($host, $user, $pass) or trigger_error(mysql_error(),E_USER
 // seleciona a base de dados em que vamos trabalhar
 mysql_select_db($db, $con);
 // cria a instrução SQL que vai selecionar os dados
-$query = sprintf("SELECT id, name, record, datah FROM archII");
+$query = sprintf("SELECT id, name, record, datah FROM archII_table");
 // executa a query
 $dados = mysql_query($query, $con) or die(mysql_error());
 // transforma os dados em um array
