@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $userName = "archII";
-$password = "archII";
-$dbName = "rootroot";
+$password = "rootroot";
+$dbName = "archII";
  
 // Create database connection
 $conn = new mysqli($host, $userName, $password, $dbName);
