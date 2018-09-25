@@ -29,7 +29,7 @@ $total = mysql_num_rows($dados);
         // inicia o loop que vai mostrar todos os dados
         do {
 ?>
-            <p><?=$linha['id']?> / <?=$linha['name']?> / <?=$linha['record']?> / <?=$linha['datah']?></p>
+            <p><?echo $host?> teste <?echo $linha['id']?> / <? echo $linha['name']?> / <? echo $linha['record']?> / <? echo $linha['datah']?></p>
 <?php
         // finaliza o loop que vai mostrar os dados
         }while($linha = mysql_fetch_assoc($dados));
