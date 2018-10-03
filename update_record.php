@@ -20,11 +20,11 @@ echo $id;
 echo ("teste 1");
 
 
-$sql = "SELECT record".$game." p FROM users WHERE id=".$id.";";
+$sql = 'SELECT record'.$game.' p FROM users WHERE id='.$id;
 echo ("teste 2");
 $ratual2 = mysqli_query($conn, $sql);
-echo $conn;
 echo $sql;
+echo $conn;
 echo $ratual2['p'];
 echo ("teste 4");
  
