@@ -10,6 +10,7 @@ $ratual2 = $conn->query($ratual1);
 $conn->close();
 
 $column = $ratual2['p'];
+echo $column;
 
 if ( $column <= $record) {
 	$sql = "UPDATE users SET record".$game."=".$record." WHERE id=".$id;
