@@ -5,7 +5,7 @@ $password = "rootroot";
 $dbName = "archII";
  
 // Create database connection
-$conn = new \mysqli($host, $userName, $password, $dbName);
+$conn = new mysqli($host, $userName, $password, $dbName);
  
 // Check connection
 if ($conn->connect_error) {
