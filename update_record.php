@@ -1,5 +1,5 @@
 <?php
-$host = "localhost";
+$host = "35.198.6.145";
 $userName = "archII";
 $password = "rootroot";
 $dbName = "archII";
