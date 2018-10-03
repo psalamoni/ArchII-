@@ -24,7 +24,7 @@ $sql = 'SELECT record'.$game.' p FROM users WHERE id='.$id;
 echo ("teste 2");
 $result = mysqli_fetch_assoc($conn, $sql);
 echo $sql;
-echo $result["p"];
+echo $result;
 echo ("teste 4");
  
 if ( $column <= $record) {
