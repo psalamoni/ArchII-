@@ -23,8 +23,9 @@ echo ("teste 1");
 $sql = "SELECT record".$game." p FROM users WHERE id=".$id.";";
 echo ("teste 2");
 $ratual2 = mysqli_query($conn, $sql);
-echo ("teste 3");
-echo $ratual2;
+echo $conn;
+echo $sql;
+echo $ratual2['p'];
 echo ("teste 4");
  
 if ( $column <= $record) {
