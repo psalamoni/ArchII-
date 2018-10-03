@@ -16,7 +16,7 @@ if ( $column <= $record) {
 	$sql = "UPDATE users SET record".$game."=".$record." WHERE id=".$id;
 	$result = $conn->query($sql);
 	$conn->close();
-}
+};
 ?>
 <html><body>
 <span class="about-stat"><b><? echo $column ?></b> subscribers</span>
