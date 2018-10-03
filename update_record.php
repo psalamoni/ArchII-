@@ -17,15 +17,17 @@ $game = $_GET['game'];
 $record  = $_GET['record'];
 
 echo $id;
-echo ("teste 123");
+echo ("teste 1");
 
 
 $sql = "SELECT record".$game." p FROM users WHERE id=".$id.";";
-echo $sql;
+echo ("teste 2");
 $ratual2 = $conn->query($sql);
-
+echo ("teste 3");
 $column = $ratual2['p'];
+echo ("teste 4");
 echo $column;
+echo ("teste 5");
 
 if ( $column <= $record) {
 	$sql = "UPDATE users SET record" . $game . "=" . $record . " WHERE id=" . $id;
