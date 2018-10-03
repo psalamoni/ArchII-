@@ -6,15 +6,15 @@ $game = $_GET['game'];
 $record  = $_GET['record'];
 
 $ratual1 = "SELECT record".$game." p FROM users WHERE id=".$id;
-$ratual2 = $conn->query($ratual1);
+//$ratual2 = $conn->query($ratual1);
 
 $column = $ratual2['p'];
 echo $column;
 
-if ( $column <= $record) {
+if ( $column >= $record) {
 	$sql = "UPDATE users SET record".$game."=".$record." WHERE id=".$id;
-	$result = $conn->query($sql);
-};
+	//$result = $conn->query($sql);
+}
 $conn->close();
 ?>
 <html><body>
