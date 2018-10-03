@@ -7,7 +7,6 @@ $record  = $_GET['record'];
 
 $ratual1 = "SELECT record".$game." p FROM users WHERE id=".$id;
 $ratual2 = $conn->query($ratual1);
-$conn->close();
 
 $column = $ratual2['p'];
 echo $column;
@@ -15,8 +14,8 @@ echo $column;
 if ( $column <= $record) {
 	$sql = "UPDATE users SET record".$game."=".$record." WHERE id=".$id;
 	$result = $conn->query($sql);
-	$conn->close();
 };
+$conn->close();
 ?>
 <html><body>
 <span class="about-stat"><b><? echo $column ?></b> subscribers</span>
