@@ -5,11 +5,11 @@ $password = "rootroot";
 $dbName = "archII";
  
 // Create database connection
-$conn = new mysqli($host, $userName, $password, $dbName);
+$conn = mysqli_connect($host, $userName, $password, $dbName);
  
 // Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
+if (mysqli_connect_errno()) {
+die("Connection failed: " . mysqli_connect_error());
 }
 
 $id = $_GET['id'];
@@ -22,14 +22,14 @@ echo ("teste 1");
 
 $sql = "SELECT record".$game." p FROM users WHERE id=".$id.";";
 echo ("teste 2");
-$ratual2 = $conn->query($sql);
+$ratual2 = mysqli_query($conn, $sql);
 echo ("teste 3");
 echo $ratual2;
 echo ("teste 4");
  
 if ( $column <= $record) {
 	$sql = "UPDATE users SET record" . $game . "=" . $record . " WHERE id=" . $id;
-	$result = $conn->query($sql);
+	$result = mysqli_query($conn, $sql);
 }
 $conn->close();
 ?>
