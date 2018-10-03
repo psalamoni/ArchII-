@@ -24,9 +24,9 @@ $sql = "SELECT record".$game." p FROM users WHERE id=".$id.";";
 echo ("teste 2");
 $ratual2 = $conn->query($sql);
 echo ("teste 3");
-$column = $ratual2;
+$vvs = $ratual2;
 echo ("teste 4");
-echo $column;
+echo $vvs;
 echo ("teste 5");
 
 if ( $column <= $record) {
