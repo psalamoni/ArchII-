@@ -16,14 +16,19 @@ $id = $_GET['id'];
 $game = $_GET['game'];
 $record  = $_GET['record'];
 
+echo $id;
+echo ("teste 123");
+
+
 $sql = "SELECT record".$game." p FROM users WHERE id=".$id;
+echo $sql;
 $ratual2 = $conn->query($sql);
 
 $column = $ratual2['p'];
 echo $column;
 
 if ( $column <= $record) {
-	$sql = "UPDATE users SET record" . $game . "=" . $record . " WHERE id=" . $id;
+	//$sql = "UPDATE users SET record" . $game . "=" . $record . " WHERE id=" . $id;
 	$result = $conn->query($sql);
 }
 $conn->close();
