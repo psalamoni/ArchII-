@@ -22,7 +22,7 @@ echo ("teste 1");
 
 $sql = 'SELECT record'.$game.' p FROM users WHERE id='.$id;
 echo ("teste 2");
-$result = mysqli_result($conn, $sql);
+$result = mysqli_fetch_assoc($conn, $sql);
 echo $sql;
 echo $result['p'];
 echo ("teste 4");
