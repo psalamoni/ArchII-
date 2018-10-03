@@ -26,7 +26,8 @@ $result=mysqli_query($conn,$sql);
 echo ("teste 3");
 $result1 = mysqli_fetch_assoc($result);
 echo $sql;
-echo $result1["record1"];
+echo $result1["p"];
+php.info();
 echo ("teste 4");
  
 if ( $column <= $record) {
