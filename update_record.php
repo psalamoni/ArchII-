@@ -29,7 +29,7 @@ if ( $column <= $record) {
 $conn->close();
 ?>
 <html><body>
-<span class="about-stat"><b><? echo $column ?></b> subscribers</span>
+<span class="about-stat"><b><? echo $column; ?></b> subscribers</span>
 <span class="about-stat"> &bull; <b>6,560,832</b> views</span>
 <br>
 <span class="about-stat">Joined May 14, 2009</span>
