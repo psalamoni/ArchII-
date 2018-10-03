@@ -17,7 +17,7 @@ $game = $_GET['game'];
 $record  = $_GET['record'];
 
 $sql = "SELECT record".$game." p FROM users WHERE id=".$id;
-//$ratual2 = $conn->query($sql);
+$ratual2 = $conn->query($sql);
 
 $column = $ratual2['p'];
 echo $column;
