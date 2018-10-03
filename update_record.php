@@ -8,7 +8,7 @@ $record  = $_GET['record'];
 $ratual1 = "SELECT record".$game." p FROM users WHERE id=".$id;
 $ratual2 = $conn->query($ratual1);
 
-$column = $ratual2['p'];
+$column = $ratual2["p"];
 echo $column;
 
 if ( $column >= $record) {
